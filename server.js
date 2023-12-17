@@ -23,7 +23,8 @@ app.get('/', (req, res) => {
   res.status(200).json({ msg: 'Home page' });
 });
 
-// app.use('/auth', authRoutes);
+// app.use('/auth', authRoutes)
+
 app.use('/vendors', vendorRoutes);
 app.use("/user", userRouter);
 
